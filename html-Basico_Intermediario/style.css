@@ -1,0 +1,59 @@
+
+#Port{
+	background-color: red;
+	width:10cm;
+	height:3cm; 
+	text-align: justify;
+	text-indent: 30px; 
+	font-family: 'Josefin Slab', serif;
+	font-size: 15px;
+}
+
+#Lista{
+	background-color: blue;
+	width:100px; 
+	height:300px;
+}
+.Borda{
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(00, 00, 255);
+	border-radius: 15px;
+	font-family: sans-serif;
+	font-size: 40px;
+}
+.Quadrada{
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+}
+.Norte{
+	
+}
+a{
+	text-decoration: none;
+}
+.Voltar{
+	color: black;
+	text-decoration: none;
+}
+.Corpo{
+	background-color: rgb(80, 100, 255);
+}
+.instagran{
+	height:40px; 
+	width:40px;
+}
+.facebook{
+	height:40px ;
+	width: 40px;
+}
+
+#casd{
+	border:2px solid red;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 10px;
+
+
+}

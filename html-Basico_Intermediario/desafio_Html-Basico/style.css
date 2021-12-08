@@ -1,0 +1,9 @@
+body{
+	background-image: url(Fundos/fundo02.png);
+	/*background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+.Paragrafos_subtitulos{
+	color:rgb(255, 00, 00);
+}

@@ -1,0 +1,72 @@
+Código HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desafio CSS</title>
+    <meta charset= "utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    	
+    <div class="imagem">
+    		<p>Pedro Felipe da Silva</p>
+    		<ul>
+    			<img src="imagem/Insta.png"><a href="https://www.instagram.com/pedrofelipe_m/"><li>/PEDROFELIPE_M</li></a>
+    			<img src="imagem/Twitter.png"><a href="https://twitter.com/login?lang=pt"><li>/PEDROFELIPE_M</li></a>
+    			<img src="imagem/Youtube.png"><a href="https://www.youtube.com/"><li>/PEDROFELIPE_M</li></a>
+    		</ul>
+	</div>
+</body>
+</html>
+
+
+
+Código CSS
+
+
+
+.imagem{
+	background-image: url("imagem/backgorund.png");
+	background-repeat: no-repeat;
+	position: relative;
+	left: 300px;
+	top: 90px;
+	height: 400px;
+}
+
+body{
+	background-color: black;
+}
+
+p{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	position: relative;
+	left: 40px;
+	top: 30px;
+}	
+
+li{
+	color: black;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+	position: relative;
+	left: 50px;
+	top: -15px;
+}
+
+img{
+	position: relative;
+	top: 10px;
+	height: 45px
+}
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
