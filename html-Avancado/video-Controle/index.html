@@ -11,13 +11,13 @@
 <body>
     <div class="container">
 
-        <video class="video" src="./assets/videos/naruto-007.mp4"></video>
+        <video id="videoId" class="video" src="./assets/videos/naruto-007.mp4"></video>
 
         <div class="controle">
-            <img class="btn" src="./assets/images/avancar.png">
-            <img class="btn" src="./assets/images/pause.png">
-            <img class="btn" src="./assets/images/play.png">
-            <img class="btn" src="./assets/images/retroceder.png">
+            <img class="btn" onclick="avancar()" src="./assets/images/avancar.png">
+            <img class="btn" onclick="pausar()" src="./assets/images/pause.png">
+            <img class="btn" onclick="play()" src="./assets/images/play.png">
+            <img class="btn" onclick="retroceder()" src="./assets/images/retroceder.png">
         </div>
     </div>
     <script src="./scripts/script.js"></script>
