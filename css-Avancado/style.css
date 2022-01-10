@@ -1,25 +1,24 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    width: calc(100% - 300px);
+    background-color: darkgray;
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: green;
+}
+
+.r3 {
     background-color: blue;
-    margin: auto;
-    height: 100px;
 }
 
-:root {
-    --var_color: green;
-}
-
-.nome1 {
-    color: var(--var_color);
-    font-size: 50px;
-}
-
-.nome2 {
-    color: var(--var_color);
-    font-size: 30px;
+.item {
+    width: 200px;
+    height: 200px;
 }
