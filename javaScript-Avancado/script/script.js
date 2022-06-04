@@ -1,5 +1,5 @@
 
-/* This e Bind */
+// This e Bind 
 function speakGeneric(){
     console.log(this.sound)
 }
@@ -20,7 +20,7 @@ let bindCat = speakGeneric.bind(cat);
 bindDog();
 bindCat();
 
-Callback
+// Callback
 let usuarios = ["Pedro", "Felipe", "Maria"]
 
 function inserirUsuario(nome, callback){
@@ -36,7 +36,7 @@ function listarUsuarios(){
 
 inserirUsuario("Edvan", listarUsuarios);
 
-/*Promises */
+// Promises 
 let usuarios = ["Pedro", "Felipe", "Maria"]
 
 function inserirUsuario(nome){
@@ -96,10 +96,7 @@ async function executar(){
 
 executar();
 
-<<<<<<< HEAD
-Filter
-=======
-/*Filter*/    
+// Filter 
 >>>>>>> 5430de6e8e0a83e420bec92a170f6b57ac2d2b4a
 function novosAluno(nome, idade){
     return {nome, idade}
@@ -117,7 +114,7 @@ function menoresde30(aluno){
 }
 
 console.log(alunos.filter(menoresde30));
-*/
+
 
 let aluno = {
     nome: "Pedro",
