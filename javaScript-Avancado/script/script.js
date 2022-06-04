@@ -35,8 +35,8 @@ function listarUsuarios(){
 }
 
 inserirUsuario("Edvan", listarUsuarios);
-*/
 
+Promises
 let usuarios = ["Pedro", "Felipe", "Maria"]
 
 function inserirUsuario(nome){
@@ -64,3 +64,36 @@ inserirUsuario("Edvan")
     .catch((error) => {
         console.log(error);
     })
+*/
+let usuarios = ["Pedro", "Felipe", "Maria"]
+
+function inserirUsuario(nome){
+    let promise = new Promise(function(resolve, reject){
+        setTimeout(() => {
+            let error = false;
+            usuarios.push(nome);
+
+            if(!error){
+                resolve();
+            }else{
+                reject({msg:"Erro ao inserir usuário"});
+            }
+        }, 1000) 
+    }) 
+    return promise;
+}
+
+function listarUsuarios(){
+    console.log(usuarios);
+}
+
+async function executar(){
+   await inserirUsuario("Edvan").catch((error) => {
+       console.log(error);
+   });
+    listarUsuarios();
+}
+
+executar();
+
+    
