@@ -20,8 +20,7 @@ let bindCat = speakGeneric.bind(cat);
 bindDog();
 bindCat();
 
-*/
-
+Callback
 let usuarios = ["Pedro", "Felipe", "Maria"]
 
 function inserirUsuario(nome, callback){
@@ -36,5 +35,32 @@ function listarUsuarios(){
 }
 
 inserirUsuario("Edvan", listarUsuarios);
+*/
 
+let usuarios = ["Pedro", "Felipe", "Maria"]
 
+function inserirUsuario(nome){
+    let promise = new Promise(function(resolve, reject){
+        setTimeout(() => {
+            let error = false;
+            usuarios.push(nome);
+
+            if(!error){
+                resolve();
+            }else{
+                reject({msg:"Erro ao inserir usuário"});
+            }
+        }, 1000) 
+    }) 
+    return promise;
+}
+
+function listarUsuarios(){
+    console.log(usuarios);
+}
+
+inserirUsuario("Edvan")
+    .then(listarUsuarios)
+    .catch((error) => {
+        console.log(error);
+    })
