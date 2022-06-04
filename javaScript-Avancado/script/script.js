@@ -1,5 +1,5 @@
 
-/* This e Bind 
+/* This e Bind */
 function speakGeneric(){
     console.log(this.sound)
 }
@@ -36,7 +36,7 @@ function listarUsuarios(){
 
 inserirUsuario("Edvan", listarUsuarios);
 
-Promises
+/*Promises */
 let usuarios = ["Pedro", "Felipe", "Maria"]
 
 function inserirUsuario(nome){
@@ -95,8 +95,8 @@ async function executar(){
 }
 
 executar();
-*/
-    
+
+/*Filter*/    
 function novosAluno(nome, idade){
     return {nome, idade}
 }
