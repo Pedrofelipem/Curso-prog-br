@@ -95,8 +95,8 @@ async function executar(){
 }
 
 executar();
-*/
-    
+
+Filter
 function novosAluno(nome, idade){
     return {nome, idade}
 }
@@ -113,3 +113,38 @@ function menoresde30(aluno){
 }
 
 console.log(alunos.filter(menoresde30));
+*/
+
+let aluno = {
+    nome: "Pedro",
+    escola: "Maria da dores",
+    matricula: 15546887654,
+    telefone: 8445468786
+}
+
+let aluno1 = {
+    nome: "Maria",
+    escola: "Maria da dores",
+    matricula: 15546887654,
+    telefone: 8445468786
+}
+
+let aluno2 = {
+    nome: "Felipe",
+    escola: "Maria da dores",
+    matricula: 15546887654,
+    telefone: 8445468786
+}
+
+let alunos = [ aluno, aluno1, aluno2];
+
+let aluno3 = alunos.push({nome: "Tiago",
+            escola: "Maria da dores",
+            matricula: 15546887654,
+            telefone: 8445468786
+            });
+
+let [...todos] = alunos;
+
+console.log(todos);
+
